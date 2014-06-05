@@ -1,0 +1,37 @@
+{
+  "name": "deliciousapi",
+  "version": "0.0.1",
+  "main": "lib/deliciousapi.js",
+  "description": "The best module ever.",
+  "homepage": "https://github.com/tobiaswright/deliciousapi",
+  "bugs": "https://github.com/tobiaswright/deliciousapi/issues",
+  "dependencies": {
+    "request": "~2.34.0",
+    "node-xml2json" : "1.0.0"
+  },
+  "author": {
+    "name": "Tobias Wright",
+    "email": "tobias.wright@gmail.com",
+    "url": "www.tobiaswright.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobiaswright/deliciousapi"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
