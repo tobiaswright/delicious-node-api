@@ -12,16 +12,20 @@ By this point you, per the documentation you should have your code to get an acc
 
 All data is returned as json.
 
+```
+var delicious = require('deliciousapi')
+
 delicious.getAcessToken( client_id, client_secret, code, function( data ) {
 	console.log(data);
 	//returns bearer and user
-})
+});
 
 delicious.getRecent( bearer, function( data ) {
 	console.log(data)
-})
+});
 
 
 delicious.getAll( bearer, function( data ) {
 	console.log(data)
-})
+});
+```
