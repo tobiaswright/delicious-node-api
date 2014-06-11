@@ -1,26 +1,27 @@
 # deliciousAPI [![Build Status](https://secure.travis-ci.org/tobiaswright/deliciousapi.png?branch=master)](http://travis-ci.org/tobiaswright/deliciousapi)
 
-The best module ever.
+Node npm for the Delicious API
 
 ## Getting Started
 Install the module with: `npm install deliciousapi`
 
-```javascript
-var deliciousapi = require('deliciousapi');
-deliciousapi.awesome(); // "awesome"
-```
+## How to use
+Please review the [Delicious API](https://delicious.com/developers) for expected inputs and outputs and [authentication](https://github.com/SciDevs/delicious-api/blob/master/api/oauth.md) flow.
 
-## Documentation
-_(Coming soon)_
+By this point you, per the documentation you should have your code to get an access token. You also should create and have your [application credentials](https://delicious.com/settings/developer).
 
-## Examples
-_(Coming soon)_
+All data is returned as json.
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+delicious.getAcessToken( client_id, client_secret, code, function( data ) {
+	console.log(data);
+	//returns bearer and user
+})
 
-## Release History
-_(Nothing yet)_
+delicious.getRecent( bearer, function( data ) {
+	console.log(data)
+})
 
-## License
-Copyright (c) 2014 Tobias Wright. Licensed under the MIT license.
+
+delicious.getAll( bearer, function( data ) {
+	console.log(data)
+})

@@ -1,6 +1,6 @@
 {
   "name": "deliciousapi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/deliciousapi.js",
   "description": "The best module ever.",
   "homepage": "https://github.com/tobiaswright/deliciousapi",
